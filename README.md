@@ -1,6 +1,6 @@
 # vim-m
 
-The vim plugin for the [m](https://github.com/m-language/m-compiler) programming language,
+The vim plugin for the [m](m-language.github.io) programming language,
 featuring syntax highlighting.
 
 ## Installation (via Pathogen)
