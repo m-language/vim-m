@@ -9,8 +9,7 @@ git clone https://github.com/tkaden4/vim-m ~/.vim/bundle/vim-m
 ```
 
 ## TODO
-- Better highligting (handle edge cases and identifiers better)
-- Enforce indentation on certain forms
+- Enforce indentation
 
 ## Screenshot
 ![Screenshot of vim-m in action](/screenshot.png?raw=true)
