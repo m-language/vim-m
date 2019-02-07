@@ -13,11 +13,10 @@ syntax match mComment "\v;.*$" contains=mTodo
 
 " Keywords
 syntax keyword mKeyword
-            \ macro
             \ def
-            \ lambda
-            \ do
-            \ symbol
+            \ fn
+            \ ap
+            \ impure
 
 if exists("g:m_if_is_special")
     syntax keyword mKeyword 
