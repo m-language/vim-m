@@ -15,7 +15,7 @@ syntax match mComment "\v;.*$" contains=mTodo
 syntax keyword mKeyword
             \ def
             \ fn
-            \ ap
+            \ macro
             \ impure
 
 if exists("g:m_if_is_special")
