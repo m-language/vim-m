@@ -39,7 +39,7 @@ syntax keyword mBool
             \ false
 
 " M Strings
-syntax region mString start=/"/ skip=/\\"/ end=/"/ oneline
+syntax region mString start=/"/ skip=/\\"/ end=/"/
 
 " Set up highlighting
 highlight link mApplication Function
