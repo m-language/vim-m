@@ -1,9 +1,9 @@
-# vim-m
+# Vim-M
 
-The vim plugin for the [m](m-language.github.io) programming language,
-featuring syntax highlighting.
+A Vim plugin for [the M programming language](https://m-language.github.io/).
 
 ## Installation (via Pathogen)
+
 ```Bash
 git clone https://github.com/tkaden4/vim-m ~/.vim/bundle/vim-m
 ```
@@ -13,7 +13,7 @@ git clone https://github.com/tkaden4/vim-m ~/.vim/bundle/vim-m
 
 ## Options
 
-Unlike other lisps, `if` is not a special form, but rather an alias of the function `id`. 
+Unlike other lisps, `if` is a macro, not a special form. 
 If you'd like to have `if` highlighted as a special form (`def`, `symbol`, etc.) then add 
 the following to your `.vimrc`.
 
@@ -22,4 +22,5 @@ let g:m_if_is_special = 1
 ```
 
 ## Screenshot with vim 8 using [GohuFont](http://font.gohu.org/)
+
 ![Screenshot of vim-m in action](/screenshot.png?raw=true)
