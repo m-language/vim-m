@@ -1,4 +1,4 @@
-# Vim-M
+# vim-m
 
 A Vim plugin for [the M programming language](https://m-language.github.io/).
 
