@@ -27,11 +27,6 @@ end
 syntax match mNumber "\v<-?\d+>"
 syntax match mNumber "\v<-?\d+\.\d*>"
 
-syntax match mId /\v\S+/ contained
-
-" Application
-syntax match mApplication /(\@1<=\s*\S*/ contains=mNumber,mString,mId
-
 " Booleans
 syntax keyword mBool
             \ true
@@ -40,6 +35,11 @@ syntax keyword mBool
 " M Strings
 syntax region mString start=/"/  end=/"/
 syntax region mString start=/""/  end=/""/
+
+syntax match mId /\v[^\ ^)^(]+/ contained
+
+" Application
+syntax match mApplication /(\@1<=\s*\v[^\ ^)^(]+/ contains=mNumber,mString,mId
 
 " Set up highlighting
 highlight link mId Function
