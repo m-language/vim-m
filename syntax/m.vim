@@ -27,11 +27,10 @@ end
 syntax match mNumber "\v<-?\d+>"
 syntax match mNumber "\v<-?\d+\.\d*>"
 
-" Sexp
-"syntax region mSexp start="(" end=")" contains=@mLispAll
+syntax match mId /\v\S+/ contained
 
 " Application
-syntax match mApplication "\v\(\s*\zs[^\ ^)^(]+\ze"
+syntax match mApplication /(\@1<=\s*\S*/ contains=mNumber,mString,mId
 
 " Booleans
 syntax keyword mBool
@@ -43,7 +42,7 @@ syntax region mString start=/"/  end=/"/
 syntax region mString start=/""/  end=/""/
 
 " Set up highlighting
-highlight link mApplication Function
+highlight link mId Function
 highlight link mKeyword Keyword
 highlight link mNumber Number
 highlight link mString String
