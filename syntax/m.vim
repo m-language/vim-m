@@ -16,7 +16,6 @@ syntax keyword mKeyword
             \ def
             \ fn
             \ macro
-            \ impure
 
 if exists("g:m_if_is_special")
     syntax keyword mKeyword 
