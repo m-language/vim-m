@@ -21,6 +21,6 @@ the following to your `.vimrc`.
 let g:m_if_is_special = 1
 ```
 
-## Screenshot with vim 8 using [GohuFont](http://font.gohu.org/)
+## Screenshot with vim 8 using [GohuFont](http://font.gohu.org/) and [Wolfpack](https://github.com/carlson-erik/wolfpack)
 
 ![Screenshot of vim-m in action](/screenshot.png?raw=true)
